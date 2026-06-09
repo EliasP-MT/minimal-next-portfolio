@@ -9,152 +9,112 @@ export interface skillsInterface {
 
 export const skillsUnsorted: skillsInterface[] = [
   {
-    name: "Next.js",
-    description:
-      "Effortlessly build dynamic apps with routing, layouts, loading UI, and API routes.",
+    name: "Fusion 360",
+    description: "3D modeling and mechanical design.",
     rating: 5,
-    icon: Icons.nextjs,
+    icon: Icons.fusion360,
   },
   {
-    name: "React",
-    description:
-      "Craft interactive user interfaces using components, state, props, and virtual DOM.",
+    name: "SolidWorks",
+    description: "Computer-aided design and simulation.",
     rating: 5,
-    icon: Icons.react,
+    icon: Icons.solidworks,
   },
   {
-    name: "GraphQL",
-    description:
-      "Fetch data precisely with a powerful query language for APIs and runtime execution.",
+    name: "3D Printing",
+    description: "Rapid prototyping and additive manufacturing.",
+    rating: 5,
+    icon: Icons.print3d,
+  },
+  {
+    name: "PowerPoint",
+    description: "Professional presentation design and storytelling.",
+    rating: 5,
+    icon: Icons.powerpoint,
+  },
+  {
+    name: "Word",
+    description: "Document writing and formatting.",
+    rating: 5,
+    icon: Icons.word,
+  },
+  {
+    name: "Arduino",
+    description: "Microcontroller programming and electronic prototyping.",
     rating: 4,
-    icon: Icons.graphql,
+    icon: Icons.arduino,
   },
   {
-    name: "Nest.js",
-    description:
-      "Create scalable and modular applications with a progressive Node.js framework.",
+    name: "Excel",
+    description: "Data analysis, spreadsheets and automation.",
     rating: 4,
-    icon: Icons.nestjs,
+    icon: Icons.excel,
   },
   {
-    name: "express.js",
-    description:
-      "Build web applications and APIs quickly using a fast, unopinionated Node.js framework.",
-    rating: 5,
-    icon: Icons.express,
-  },
-  {
-    name: "Node.js",
-    description:
-      "Run JavaScript on the server side, enabling dynamic and responsive applications.",
-    rating: 5,
-    icon: Icons.nodejs,
-  },
-  {
-    name: "MongoDB",
-    description:
-      "Store and retrieve data seamlessly with a flexible and scalable NoSQL database.",
-    rating: 5,
-    icon: Icons.mongodb,
-  },
-  {
-    name: "Typescript",
-    description:
-      "Enhance JavaScript with static types, making code more understandable and reliable.",
-    rating: 5,
-    icon: Icons.typescript,
-  },
-  {
-    name: "Javascript",
-    description:
-      "Create interactive and dynamic web experiences with the versatile scripting language.",
-    rating: 5,
-    icon: Icons.javascript,
-  },
-  {
-    name: "HTML 5",
-    description:
-      "Structure web content beautifully with the latest version of HyperText Markup Language.",
+    name: "PalmSens",
+    description: "Electrochemistry and analytical instrumentation.",
     rating: 4,
-    icon: Icons.html5,
+    icon: Icons.palmsens,
   },
   {
-    name: "CSS 3",
-    description:
-      "Style web pages creatively with the latest iteration of Cascading Style Sheets.",
-    rating: 4,
-    icon: Icons.css3,
-  },
-  {
-    name: "React Native",
-    description:
-      "Develop cross-platform mobile apps using React for consistent and engaging experiences.",
-    rating: 4,
-    icon: Icons.react,
-  },
-  {
-    name: "Angular",
-    description:
-      "Build dynamic web apps with a TypeScript-based open-source framework by Google.",
+    name: "Matlab",
+    description: "Numerical computing, simulation and data processing.",
     rating: 3,
-    icon: Icons.angular,
+    icon: Icons.matlab,
   },
   {
-    name: "Redux",
-    description:
-      "Manage app state effectively using a predictable and centralized state container.",
-    rating: 4,
-    icon: Icons.redux,
-  },
-  {
-    name: "Socket.io",
-    description:
-      "Enable real-time, bidirectional communication between clients and servers effortlessly.",
+    name: "NX CAD",
+    description: "Advanced modeling and industrial design.",
     rating: 3,
-    icon: Icons.socketio,
+    icon: Icons.nxcad,
   },
   {
-    name: "Material UI",
-    description:
-      "Create stunning and responsive UIs with a popular React UI framework.",
-    rating: 4,
-    icon: Icons.mui,
-  },
-
-  {
-    name: "Tailwind CSS",
-    description:
-      "Design beautiful, modern websites faster with a utility-first CSS framework.",
-    rating: 5,
-    icon: Icons.tailwindcss,
-  },
-  {
-    name: "AWS",
-    description:
-      "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
+    name: "AutoCAD",
+    description: "2D and 3D technical drawing.",
     rating: 3,
-    icon: Icons.amazonaws,
+    icon: Icons.autocad,
   },
   {
-    name: "Bootstrap",
-    description:
-      "Quickly create responsive and appealing web designs using a popular CSS framework.",
+    name: "Python",
+    description: "Programming and data processing.",
+    rating: 3,
+    icon: Icons.python,
+  },
+  {
+    name: "LabVIEW",
+    description: "Data acquisition and measurement automation.",
+    rating: 3,
+    icon: Icons.labview,
+  },
+  {
+    name: "CNC Machine",
+    description: "Numerical machining and mechanical part manufacturing.",
+    rating: 3,
+    icon: Icons.machineCNC,
+  },
+  {
+    name: "Cleanroom",
+    description: "Microfabrication and cleanroom processes.",
+    rating: 3,
+    icon: Icons.wafer,
+  },
+  {
+    name: "Adobe Illustrator",
+    description: "Vector graphics and design.",
+    rating: 3,
+    icon: Icons.illustrator,
+  },
+  {
+    name: "Blender",
+    description: "3D modeling and rendering.",
     rating: 2,
-    icon: Icons.bootstrap,
+    icon: Icons.blender,
   },
   {
-    name: "MySQL",
-    description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
+    name: "Adobe Photoshop",
+    description: "Photo editing and image creation.",
     rating: 2,
-    icon: Icons.mysql,
-  },
-  {
-    name: "Netlify",
-    description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
-    rating: 4,
-    icon: Icons.netlify,
+    icon: Icons.photoshop,
   },
 ];
 

@@ -82,4 +82,12 @@ export const pagesConfig: PagesConfig = {
         "Naman Barkiya's professional journey and experience timeline.",
     },
   },
+  education: {
+  title: "Education",
+  description: "Mon parcours académique.",
+  metadata: {
+    title: "Education",
+    description: "Mon parcours académique et mes formations.",
+  },
+},
 };
