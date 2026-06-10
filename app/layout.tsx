@@ -1,9 +1,7 @@
 import "./globals.css";
 
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { Inter as FontSans } from "next/font/google";
 import localFont from "next/font/local";
-import Script from "next/script";
 
 import { Analytics } from "@/components/common/analytics";
 import { ThemeProvider } from "@/components/common/theme-provider";
@@ -17,7 +15,6 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-// Font files can be colocated inside of `pages`
 const fontHeading = localFont({
   src: "../assets/fonts/CalSans-SemiBold.woff2",
   variable: "--font-heading",
@@ -91,17 +88,9 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
-  },
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  const GA_ID = process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID;
-  if (!GA_ID) {
-    throw new Error("Missing Google Analytics ID");
-  }
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
@@ -116,29 +105,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
           attribute="class"
           defaultTheme="system"
           enableSystem
-          themes={[
-            "light",
-            "dark",
-            "retro",
-            "cyberpunk",
-            "paper",
-            "aurora",
-            "synthwave",
-          ]}
+          themes={["light", "dark", "retro", "cyberpunk", "paper", "aurora", "synthwave"]}
         >
           {children}
           <Analytics />
           <Toaster />
           <ModalProvider />
         </ThemeProvider>
-        <Script
-          src="https://convot.xyz/widget.js"
-          data-token="3vpr28Va7E8luRq8DMOStAr9tefOCVqifQ28fpp6grrKS4zflNRZQjQpmeu4os_2nuLmmh1DOshndiN5O1vvGg"
-          data-api-url="https://api.convot.xyz"
-          strategy="afterInteractive"
-        />
       </body>
-      <GoogleAnalytics gaId={GA_ID} />
     </html>
   );
 }

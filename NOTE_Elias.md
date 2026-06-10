@@ -19,3 +19,17 @@ npm run dev
 - Mon contenu : `config/`
 - Mes images : `public/`
 - La navigation : `config/routes.ts`
+
+
+pour rajouter des SKILLS : 
+- rajouter le svg dans public/skill/
+- layout.tsx et rajouter une ligne : 
+  autocad: () => <img src="/skills/autocad.svg" alt="Autocad" width={64} height={64} />,
+
+- puis dans skills.ts rajouter
+    {
+    name: "AutoCAD",
+    description: "2D and 3D technical drawing.",
+    rating: 3,
+    icon: Icons.autocad,
+  },
