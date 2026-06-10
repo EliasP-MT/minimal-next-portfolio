@@ -39,7 +39,7 @@ export default function IndexPage() {
     url: siteConfig.url,
     image: siteConfig.ogImage,
     jobTitle: "Biomedical Technology Engineer",
-    sameAs: [siteConfig.links.github, siteConfig.links.twitter],
+    sameAs: [siteConfig.links.github, ],
   };
 
   // Structured data for website as a software application (template)

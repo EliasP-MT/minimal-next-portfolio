@@ -1,40 +1,27 @@
 export const siteConfig = {
-  name: "Naman Barkiya - Applied AI Engineer",
-  authorName: "Naman Barkiya",
-  username: "namanbarkiya",
+  name: "Elias Pajot - Biomedical Technology Engineer",
+  authorName: "Elias Pajot",
+  username: "eliaspajot",
   description:
-    "Naman Barkiya - Applied AI Engineer working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions in software development and AI.",
-  url: "https://nbarkiya.xyz",
+    "Elias Pajot - Biomedical Technology Engineer working at the intersection of engineering design, medical instrumentation, and innovative healthcare solutions. Explore his portfolio showcasing projects, experience, and contributions in the biomedical field.",
+  url: "https://eliaspajot.xyz",
   links: {
-    twitter: "https://x.com/namanbarkiya",
-    github: "https://github.com/namanbarkiya",
-    templateRepo: "https://github.com/namanbarkiya/minimal-next-portfolio",
+    github: "https://github.com/eliasP-MT",
+    
   },
-  ogImage:
-    "https://res.cloudinary.com/dvt5vkfwz/image/upload/v1767384721/naman_portfolio_og_image.png",
-  iconIco:
-    "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/naman-favicon.ico",
-  logoIcon:
-    "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357294/assets/naman-logo.png",
+ogImage: "https://eliaspajot.xyz/og-image.png",
+iconIco: "app/(root)/favicon.ico",
+logoIcon: "app/(root)/logo.png",
   keywords: [
-    "Naman Barkiya",
-    "Applied AI Engineer",
-    "AI Engineer",
-    "Software Engineer",
-    "Full Stack Developer",
-    "Machine Learning",
-    "Data Engineering",
-    "UBS",
-    "Python Developer",
-    "React Developer",
-    "Next.js Developer",
-    "TypeScript",
-    "Databricks",
-    "AI Startups",
-    "Software Development",
-    "Web Developer",
-    "Backend Developer",
-    "Frontend Developer",
-    "Tech Portfolio",
+    "Elias Pajot",
+    "Biomedical Technology Engineer",
+    "Engineering Design",
+    "Medical Instrumentation",
+    "Innovative Healthcare Solutions",
+    "Biomedical Engineering",
+    "Healthcare Technology",
+    // Rajouter des mots-clés pertinents pour améliorer le référencement 
   ],
 };
+
+
