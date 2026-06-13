@@ -1,5 +1,3 @@
-import { ValidSkills } from "./constants";
-
 export interface ExperienceInterface {
   id: string;
   position: string;
@@ -9,84 +7,59 @@ export interface ExperienceInterface {
   endDate: Date | "Present";
   description: string[];
   achievements: string[];
-  skills: ValidSkills[];
+  skills: string[];
+  type: "Professional" | "Academic";
   companyUrl?: string;
   logo?: string;
 }
 
 export const experiences: ExperienceInterface[] = [
   {
-    id: "ubs",
-    position: "Software Development Engineer",
-    company: "UBS",
-    location: "Mumbai, India",
-    startDate: new Date("2024-08-01"),
-    endDate: "Present",
+    id: "cobalt-project",
+    position: "Activity Leader and Technician",
+    company: "Cobalt Project",
+    location: "La Croix-sur-Lutry, Switzerland",
+    startDate: new Date("2020-01-01"),
+    endDate: new Date("2023-12-31"),
     description: [
-      "Shipped production features within the first month for a trader-facing P&L dashboard used by global stakeholders.",
-      "Led the migration from Kendo UI to UBS’s internal design system to reduce UI inconsistencies and improve render performance.",
-      "Designed and automated a daily FX rate ingestion pipeline using Databricks (Python, Spark SQL) and Java services.",
+      "Organized and managed game sessions, provided active coaching for adult players, and supervised children's parties.",
     ],
-    achievements: [
-      "Shipped production features within the first month for a trader-facing P&L dashboard used by global stakeholders.",
-      "Led migration from Kendo UI to UBS’s internal design system, reducing UI inconsistencies and improving render performance across core dashboards.",
-      "Designed and automated a daily FX rate ingestion pipeline using Databricks (Python, Spark SQL) and Java services, eliminating manual rate updates.",
-      "Won UBS AI Venture Challenge by building data transformation and anomaly detection pipelines on trading datasets.",
-      "Led a 12-member team in an internal hackathon to build an AI-powered tool that generates GitLab tickets, test cases, and requirement summaries.",
-    ],
-    skills: ["Typescript", "React", "Databricks", "Java", "Python"],
-    companyUrl: "https://www.ubs.com",
-    logo: "/experience/keys-logo.png",
+    achievements: [],
+    skills: ["Team Leadership", "Customer Service", "Event Coordination", "Safety Management", "Coaching"],
+    type: "Professional",
+    companyUrl: "https://cobaltproject.com/en/",
+    logo: "/experience/cobalt.png",
   },
   {
-    id: "muze-ai",
-    position: "Founding Engineer",
-    company: "Muze AI",
-    location: "Bengaluru, India",
-    startDate: new Date("2023-10-01"),
-    endDate: new Date("2024-03-01"),
+    id: "denner",
+    position: "Cashier & All-Rounder",
+    company: "Denner Satellite",
+    location: "Belmont-sur-Lausanne, Switzerland",
+    startDate: new Date("2020-01-01"),
+    endDate: new Date("2023-12-31"),
     description: [
-      "Improved LLM function-calling accuracy through structured prompt design and response validation.",
-      "Developed APIs and integrated Slack, Google Workspace, and HubSpot automations via FastAPI.",
-      "Migrated ML inference from Replicate to AWS SageMaker to reduce cold-start latency.",
+      "Managed cash operations, stock replenishment, and provided customer service every Sunday morning.",
     ],
-    achievements: [
-      "Improved LLM function-calling accuracy by ~40% through structured prompt design and response validation.",
-      "Developed APIs and integrated Slack, Google Workspace, and HubSpot automations via FastAPI.",
-      "Migrated ML inference from Replicate to AWS SageMaker, reducing cold-start latency by ~30%.",
-      "Created a Next.js dashboard for user analytics and a demo video explaining the implementation.",
-    ],
-    skills: ["FastAPI", "Python", "AWS", "Next.js", "React", "Typescript"],
-    companyUrl: "https://muzecmo.com",
-    logo: "/experience/muzeai-logo.png",
+    achievements: [],
+    skills: ["Cash Handling", "Stock Management", "Customer Service", "Retail Operations"],
+    type: "Professional",
+    logo: "/experience/denner.png",
   },
   {
-    id: "builtdesign",
-    position: "Web Developer Intern",
-    company: "Builtdesign",
-    location: "Nagpur, India",
-    startDate: new Date("2021-07-01"),
-    endDate: new Date("2022-07-01"),
+    id: "migros",
+    position: "Cashier",
+    company: "Migros",
+    location: "Pully, Switzerland",
+    startDate: new Date("june 2021"),
+    endDate: new Date("2021-06-30"),
     description: [
-      "Developed websites using React, Angular, and GraphQL.",
-      "Set up AWS servers and CI/CD pipelines.",
-      "Built a multi-page PDF reader for large files (>300MB).",
+      "Managed cash operations, stock replenishment, and provided customer service.",
     ],
-    achievements: [
-      "Developed websites using React, Angular, and GraphQL; reduced API load time by 30%.",
-      "Set up AWS servers and CI/CD pipelines, scaling traffic to 3,000+ users/day.",
-      "Built a multi-page PDF reader for large files (>300MB) to boost user engagement.",
-    ],
-    skills: [
-      "React",
-      "Angular",
-      "GraphQL",
-      "AWS",
-      "HTML 5",
-      "CSS 3",
-      "Javascript",
-    ],
-    companyUrl: "https://builtdesign.in",
-    logo: "/experience/builtdesign-logo.png",
+    achievements: [],
+    skills: ["Cash Handling", "Stock Management", "Customer Service"],
+    type: "Professional",
+    logo: "/experience/migros.png",
   },
 ];
+
+export const featuredExperiences = experiences.slice(0, 3);

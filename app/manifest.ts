@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Naman Barkiya | Applied AI Engineer",
-    short_name: "Naman Barkiya",
+    name: "Elias Pajot | Biomedical Technology Engineer",
+    short_name: "Elias Pajot",
     description:
-      "Naman Barkiya - Applied AI Engineer working at the intersection of AI, data, and scalable software systems.",
+      "Elias Pajot - Biomedical Technology Engineer specializing in engineering design, medical instrumentation, and innovative healthcare solutions.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
@@ -25,11 +25,10 @@ export default function manifest(): MetadataRoute.Manifest {
     ],
     categories: [
       "portfolio",
-      "ai",
-      "software engineering",
-      "machine learning",
-      "developer",
-      "web development",
+      "biomedical engineering",
+      "medical devices",
+      "mechanical design",
+      "engineering",
     ],
     lang: "en",
     dir: "ltr",

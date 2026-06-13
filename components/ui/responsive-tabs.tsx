@@ -63,23 +63,27 @@ export function ResponsiveTabs({
         </DropdownMenu>
       </div>
 
-      {/* Desktop: Tabs */}
-      <div className="hidden md:block">
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-3">
-            {items.map((item) => (
-              <TabsTrigger key={item.value} value={item.value}>
-                {item.label}
-              </TabsTrigger>
-            ))}
-          </TabsList>
-          {items.map((item) => (
-            <TabsContent key={item.value} value={item.value}>
-              {item.content}
-            </TabsContent>
-          ))}
-        </Tabs>
-      </div>
+{/* Desktop: Tabs */}
+<div className="hidden md:block">
+  <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+    {/* Remplacement de grid-cols-2 par un style dynamique basé sur le nombre d'items */}
+    <TabsList 
+      className="grid w-full" 
+      style={{ gridTemplateColumns: `repeat(${items.length}, minmax(0, 1fr))` }}
+    >
+      {items.map((item) => (
+        <TabsTrigger key={item.value} value={item.value}>
+          {item.label}
+        </TabsTrigger>
+      ))}
+    </TabsList>
+    {items.map((item) => (
+      <TabsContent key={item.value} value={item.value}>
+        {item.content}
+      </TabsContent>
+    ))}
+  </Tabs>
+</div>
 
       {/* Mobile: Content */}
       <div className="md:hidden">{activeItem?.content}</div>
